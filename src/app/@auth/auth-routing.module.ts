@@ -16,7 +16,6 @@ export const routes: Routes = [
     {
         path: "",
         component: NbAuthComponent,
-        redirectTo: "login",
         children: [
             {
                 path: "login",

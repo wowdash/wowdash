@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
+import { AuthGuard } from './auth-guard.service';
 import { CoreModule } from './@core/core.module';
 import { ThemeModule } from './@theme/theme.module';
 import { AppRoutingModule } from './app-routing.module';
@@ -99,7 +100,9 @@ import {
         NbToastrModule.forRoot(),
         CoreModule.forRoot(),
     ],
-    providers: [],
+    providers: [
+        AuthGuard
+    ],
     bootstrap: [ AppComponent ]
 })
 export class AppModule
