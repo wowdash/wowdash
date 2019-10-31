@@ -17,6 +17,7 @@ import { ThemeModule } from '../../@theme/theme.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { OverviewComponent } from './overview/overview.component';
+import { AccountComponent } from './account/account.component';
 
 @NgModule({
     imports: [
@@ -36,7 +37,8 @@ import { OverviewComponent } from './overview/overview.component';
     ],
     declarations: [
         HomeComponent,
-        OverviewComponent
+        OverviewComponent,
+        AccountComponent
     ],
 })
 export class HomeModule

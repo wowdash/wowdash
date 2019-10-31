@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home.component';
 import { OverviewComponent } from './overview/overview.component';
+import { AccountComponent } from './account/account.component';
 
 
 const routes: Routes = [{
@@ -13,22 +14,10 @@ const routes: Routes = [{
             path: "overview",
             component: OverviewComponent,
         },
-        /*{
-          path: 'layouts',
-          component: FormLayoutsComponent,
-        },
         {
-          path: 'layouts',
-          component: FormLayoutsComponent,
+            path: "account",
+            component: AccountComponent,
         },
-        {
-          path: 'buttons',
-          component: ButtonsComponent,
-        },
-        {
-          path: 'datepicker',
-          component: DatepickerComponent,
-        },*/
     ]
 }];
 

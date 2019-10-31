@@ -7,27 +7,18 @@ export const MENU_ITEMS: NbMenuItem[] = [
         link: "/dashboard/home/overview",
         home: true,
     },
-
-
+    {
+        title: "My Account",
+        icon: "award-outline",
+        link: "/dashboard/home/account"
+    },
 
     {
         title: "OLDSTUFF",
         group: true,
     },
-  {
-    title: 'E-commerce',
-    icon: 'shopping-cart-outline',
-    link: '/pages/dashboard',
-  },
-  {
-    title: 'IoT Dashboard',
-    icon: 'home-outline',
-    link: '/pages/iot-dashboard',
-  },
-  {
-    title: 'FEATURES',
-    group: true,
-  },
+
+
   {
     title: 'Layout',
     icon: 'layout-outline',
