@@ -1,2 +1,1 @@
-# wowdash
-WoW-Dashboard
+# WoW-Dashboard
