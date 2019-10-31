@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'wowdash-app',
+    template: '<router-outlet></router-outlet>',
 })
-export class AppComponent {
-  title = 'wowdash';
+export class AppComponent
+{
+    title = "WoW-Dashboard";
 }

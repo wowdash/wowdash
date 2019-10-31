@@ -1,11 +1,43 @@
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+
+import {
+    NbAuthComponent,
+    NbLoginComponent,
+    NbLogoutComponent,
+    NbRegisterComponent,
+    NbRequestPasswordComponent,
+    NbResetPasswordComponent,
+} from '@nebular/auth';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+    {
+        path: "dashboard",
+        loadChildren: () => import("./pages/pages.module").then(m => m.PagesModule),
+    },
+    {
+        path: "auth",
+        loadChildren: './@auth/auth.module#NgxAuthModule',
+    },
+    {
+        path: "",
+        redirectTo: "dashboard",
+        pathMatch: "full"
+    },
+    {
+        path: "**",
+        redirectTo: "dashboard"
+    },
+];
+
+const config: ExtraOptions = {
+    useHash: false,
+};
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes, config)],
+    exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule
+{}
